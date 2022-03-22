@@ -1,0 +1,75 @@
+$color60: beige;
+$color30: green;
+$color10: gold;
+$colorNero: adjust-color($color30, $lightness: -25%);
+
+body {
+  background-color: $color60;
+  margin: 0;
+  color: $colorNero;
+}
+
+header {
+  background-color: $color30;
+  margin: 0;
+  text-align: center;
+  padding: 1ex 0;
+
+  nav {
+    padding: 5px 0;
+    background-color: hsl(
+      hue($color30),
+      saturation($color30),
+      lightness($color30)-4
+    );
+  }
+
+  ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+
+    li {
+      display: flex;
+      list-style: none;
+      min-width: 80px;
+      min-height: 30px;
+      align-items: center;
+
+      a {
+        min-width: 100%;
+        padding: 10px 0;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        color: $colorNero;
+        background-color: $color10;
+      }
+
+      button {
+        padding: 11px 3px;
+        border: 0;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        // color: azure;
+        background-color: $color10;
+      }
+    }
+  }
+}
+
+main {
+  display: grid;
+  position: relative;
+  padding: 8px;
+}
+
+aside {
+    display: none;
+    grid-column: 1;
+    width: 30%;
+}
+
+.contenido{
+    grid-column: 2;
+}
