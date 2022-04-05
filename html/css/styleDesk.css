@@ -1,0 +1,57 @@
+.btn_temario {
+  display: none;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'header header header header header header' 'menu main main main main main' 'footer footer footer footer footer footer';
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 5;
+  grid-area: main;
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: header;
+}
+
+.contenido {
+  margin: 0;
+  width: 70vw;
+}
+
+.temario {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  left: 0;
+  width: 22vw;
+  position: relative;
+  display: block;
+}
+
+.diccionario {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+  left: 0;
+  width: 22vw;
+  position: relative;
+  top: 5%;
+  z-index: 1;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: footer;
+}
+/*# sourceMappingURL=styleDesk.css.map */

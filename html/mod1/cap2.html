@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso para princiantes de Java </title>
+
+  <!---->
+  <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="./../css/style.css">
+  <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)">
+
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="./../index.html">
+      <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+    </a>
+    <nav>
+      <ul>
+        <li class="btn_temario"><a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+        </li>
+        <li><a href="">Ejercicios</a></li>
+        <li><a href="">Examen</a></li>
+        <li class="btn_diccionario"><a href="#"
+            onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a> </li>
+    </nav>
+  </header>
+
+  <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+  <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+  <main>
+
+    <div class="contenido">
+      <h1>Pequeña historia de la programación y de Java</h1>
+
+      <p>Los comienzos del desarrollo de la programación informática coinciden con la aparición de las primeras
+        computadoras en la segunda mitad del siglo XX. La historia de la programación se puede describir a través del
+        desarrollo de los diferentes lenguajes de programación:</p>
+
+      <ol>
+        <li> <strong>Lenguaje máquina.</strong> En este primer período se utilizaban lenguajes máquina muy básicos y
+          limitados basados en el sistema binario, el lenguaje de los ordenadores, por lo que aún hoy todo lenguaje es
+          convertido a este. Fue reemplazado, ya que resultaba una forma de programación tediosa y difícil.</li>
+        <li> <strong>Lenguaje ensamblador</strong> Más tarde comenzaron a surgir lenguajes que hacían uso de códigos de
+          palabras. Se utilizaban palabras simples, mnemotécnicas y abreviaturas que tenían su correlativo y eran
+          traducidas al código máquina. El lenguaje ensamblador fue incorporado porque resultaba más fácil de recordar y
+          realizar por el usuario que el código máquina.</li>
+        <li> <strong>Lenguaje de alto nivel.</strong> A finales de la década del 50 surgió el Fortran, un lenguaje de
+          programación desarrollado por IBM que inició la aparición de lenguajes basados en conjuntos de algoritmos
+          mucho más complejos. Estos lenguajes se adaptaban a distintos ordenadores y eran traducidos por medio de un
+          software al lenguaje de máquina.</li>
+        <li> <strong>Lenguajes orientados a objetos.</strong> El siguiente paso fue dado por el lenguaje SmallTalk 72
+          por los años 70´s, un lenguaje que utilizaba el concepto de objetos para programar y que popularizo la
+          programación orientada a objetos, donde otros lenguajes surgieron (como Java) o se adaptaron para manejar esta
+          nueva forma de programación, aún vigente hoy en día.</li>
+      </ol>
+
+      <p>Ahora hablemos de Java, este lenguaje de programación fue desarrollado originalmente por James Gosling, de Sun
+        Microsystems (adquirida en el 2010 por la compañía Oracle), y publicado para el público en 1995. Dicen que el
+        origen del nombre de “Java” viene de un tipo de café disponible en la cafetería cercana; de ahí que el icono de
+        Java sea una taza de café (Imagen 2).</p>
+<!-- style="max-width: 90vw; display:block; margin:auto;" -->
+      <img src="./img/cap2_logo_java.png" alt="Logo de Java" >
+
+      <p>El lenguaje Java se creó con cinco objetivos principales:</p>
+      <ol>
+        <li>Debería usar la programación orientada a objetos.</li>
+        <li>Debería permitir la ejecución de un mismo programa en múltiples sistemas operativos.</li>
+        <li>Debería incluir por defecto soporte para trabajo en redes locales.</li>
+        <li>Debería diseñarse para ejecutar código en sistemas remotos de forma segura.</li>
+        <li>Debería ser fácil de usar y tomar lo mejor de otros lenguajes orientados a objetos, como C++. </li>
+      </ol>
+      <p>Hay que mencionar que todos estos objetivos se cumplieron, pero hablaremos un poco de 2 objetivos en
+        específico, el paradigma de la programación orientada a objetos y ejecutar un mismo programa en múltiples
+        Sistemas Operativos como lo son Mac, Windows o Linux.</p>
+
+      <p>La <strong><i>Programación Orientada a Objeto</i></strong> (abreviado como <strong>POO</strong>) es una
+        forma/estilo de programación basado en agrupar
+        los datos en estructuras denominadas “objetos”, y así poder programar aplicaciones usando estos “objetos” para
+        resolver el problema en cuestión. Tocaremos a profundidad de la POO mucho más adelante en el curso, pero para
+        darnos una idea, es como si, para ejecutar la receta que tú hiciste, pudieras tener a varios chefs que se
+        encargasen de una sola tarea cada uno y tú no solo escribieras la receta, sino que también programarías cuantos
+        chefs necesitarías y en que se especializan cada uno, como trabajarían en equipo y así. La Programación
+        Orientada a Objetos fue inventada para programar de forma más sencilla, al pasar nuestro concepto de usar
+        objetos como herramientas para realizar tareas, nos permite modelar esos objetos al código de forma más
+        intuitiva y resolver los problemas de informática como ya estamos acostumbrados, usando “objetos” como
+        herramientas.</p>
+
+      <p>Para poder ejecutar programas de Java en cualquier sistema operativo, lo que hicieron fue que, al compilar el
+        programa que nosotros escribimos, Java lo pasa a un código intermedio llamado <strong><i>bytecode</i></strong>
+        de Java, que será leído
+        por un compilador especial llamado <strong><i>Java Virtual Machine (JVM)</i></strong>, hecho para correr en cada
+        una de las plataformas
+        existentes y que sea capaz de interpretar y ejecutar instrucciones contenidas en el bytecode Java a la
+        plataforma en la que se hospeda el JVM(Imagen 3). Así hicieron honor a su eslogan “Escríbelo una vez, ejecútalo
+        en cualquier lugar”, volviéndolo un lenguaje multiplataforma. </p>
+
+      <img src="./img/cap2_ejecucion_de_la_jvm.png"
+        alt="Ejecucion de un programa Java en cualquier S.O. gracias al JVM">
+
+      <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem;">
+        <a href="./cap1.html">&lt; Anterior</a>
+        <a href="./../index.html"> Temario</a>
+        <a href="./cap3.html">Siguiente &gt;</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+
+  </footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

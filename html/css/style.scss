@@ -1,12 +1,21 @@
 $color60: beige;
-$color30: green;
-$color10: gold;
-$colorNero: adjust-color($color30, $lightness: -25%);
+$color30: hsl(201, 57%, 43%);
+$color10: hsl(358, 71%, 49%);
+$colorNero: adjust-color($color30, $lightness: -28%);
+$tipado : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 
 body {
   background-color: $color60;
   margin: 0;
   color: $colorNero;
+  font-family: $tipado;
+}
+
+img{
+  max-width: 90vw; 
+  display:block; 
+  margin:auto;
 }
 
 header {
@@ -33,6 +42,7 @@ header {
     li {
       display: flex;
       list-style: none;
+      width: 15vw;
       min-width: 80px;
       min-height: 30px;
       align-items: center;
@@ -47,6 +57,7 @@ header {
       }
 
       button {
+        min-width: 100%;
         padding: 11px 3px;
         border: 0;
         border-radius: 0.5rem;
@@ -58,18 +69,60 @@ header {
   }
 }
 
-main {
-  display: grid;
-  position: relative;
-  padding: 8px;
+.logo  {
+  text-decoration-line: none;
+  color: $colorNero;
+
+  @keyframes link_logo {
+    from {color: $colorNero;}
+    to {color: $color10;} 
+  }
+   
+  &:hover{
+    animation: {
+      name: link_logo;
+      duration: 1s;
+      fill-mode: forwards;
+    }
+  }
 }
 
-aside {
-    display: none;
-    grid-column: 1;
-    width: 30%;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+
+  h2{
+    text-align: center;
+  }
+
+  li {
+    margin: 5px 0;
+  }
 }
 
 .contenido{
-    grid-column: 2;
+  width: 100%;
+}
+
+@mixin navLaterales($aparicionHacia: "derecha") {
+  display: none;
+  position: absolute;
+  width: 90vw;
+  height: 50rem;
+  left: 5%;
+  background-color: $color60;
+}
+
+.temario{
+  @include navLaterales();
+}
+
+.diccionario{
+  @include navLaterales($aparicionHacia: "izq");
+}
+
+footer{
+  min-height: 5rem;
+  background-color: $colorNero;
 }

@@ -10,233 +10,51 @@
   <!---->
   <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/styleTablet.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./css/styleDesk.css" media="(min-width: 1080px)">
 </head>
 
 <body>
   <header>
-    <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+    <a class="logo" href="./index.html">
+      <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+    </a>
     <nav>
       <ul>
-        <li><a href="">Temario</a></li>
+        <li class="btn_temario"><a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a></li>
         <li><a href="">Ejercicios</a></li>
         <li><a href="">Examen</a></li>
-        <li><button onclick="
-          var diccionario = document.getElementsByTagName('aside')[0];
-          diccionario.style.display == 'block' ?
-          diccionario.style.display = 'none' :
-          diccionario.style.display ='block';">Diccionario</button></li>
+        <li class="btn_diccionario"><a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a></li>
       </ul>
     </nav>
-
   </header>
-
+  <iframe src="./temario_nav.html" class="temario" id="temario"></iframe>
+  <iframe src="./diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
   <main>
-    
+
     <div class="contenido">
-      <h2>Bienvenido este curso de programacion para principiantes usando Java </h2>
-      <p></p>
-      <section>
-        <h3>Temario</h3>
-        <article>
-          <h4>Modulo 1: Describir la programaci&oacute;n, sus inicios e instalacion del lenguaje</h4>
-          <p>Que es la prgramacion</p>
-          <ul>
-            <li><a href="">Introducci&oacute;n: &iquest;Que es la programaci&oacute;n&quest;</a></li>
-            <li><a href="">Peque&ncaron;a historia de Java</a></li>
-            <li><a href="">Instalar el JDK</a></li>
-            <li><a href="">Crear las varibles de entorno</a></li>
-            <li><a href="">Instalar el editor de c&oacute;digo</a></li>
-          </ul>
-        </article>
+      <h2>Bienvenido a este curso de programación para principiantes usando Java </h2>
+      <p>Este curso esta pensado para los estudiantes de nuevo ingreso de las carerras de Licenciatura en Ingeniería en
+        computación (<i>ICO</i>) y Licenciatura de Informática administrativa (<i>LIA</i>) para introducirse a la
+        programación con uno de los 3 lenguajes más demandados en el mercado y que ayudara en sus futuros estudios de su
+        carrera </p>
 
-        <article>
-          <h4>Modulo 2: Primer programa en Java</h4>
-          <p>hola mundo</p>
-          <ul>
-            <li><a href="">Introduccion: Programar un programa informatico</a></li>
-            <li><a href="">Estructura b&aacute;sica de un programa en Java</a></li>
-            <li><a href="">Creacion del main</a></li>
-            <li><a href="">Ejecucion de un programa de Java</a></li>
-            <li><a href="">Ejecucion de un programa de Java a traves del editor de c&oacute;digo</a></li>
-            <li><a href="">Sintaxis y comentarios</a></li>
-          </ul>
-        </article>
-
-        <article>
-          <h4>Modulo 3: Declaraci&oacute;n y uso de variables de datos primitivos</h4>
-          <p>variables</p>
-          <ul>
-            <li><a href="">Introduccion: ¿Que es una variable?</a></li>
-            <li><a href="">Iniciaci&oacute;an de variables</a></li>
-            <li><a href="">Nombres de variables</a></li>
-            <li><a href="">Manipilacion de datos</a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </article>
-
-        <article>
-          <h4>Modulo 4: Tipos de datos primitivos</h4>
-          <p>Tipos de datos</p>
-          <ul>
-            <li><a href="">Introduccion: </a></li>
-            <li><a href="">numeros</a></li>
-            <li><a href="">letras</a></li>
-            <li><a href="">booleanos</a></li>
-            <li><a href="">Cadenas de texto</a></li>
-          </ul>
-        </article>
-
-        <article>
-          <h4>Modulo 5: Cadenas de texto</h4>
-          <p>Tipos de datos</p>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </article>
-
-        <article>
-          <h4>Modulo 6: Operadores</h4>
-          <p>Tipos de datos</p>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </article>
-
-        <article>
-          <h4>Modulo 7: Convertir datos a otro tipo </h4>
-          <p>Tipos de datos</p>
-          <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-          </ul>
-        </article>
-      </section>
-
-      <article>
-        <h4>Modulo 8: Entrada y salida de datos</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
-      <article>
-        <h4>Modulo 9: if, else, switch y break</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
-      <article>
-        <h4>Modulo 10: while, do-while, for, continue y break</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
-      <article>
-        <h4>Modulo 11: Arrays</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
-      <article>
-        <h4>Modulo 12: Clases</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
-      <article>
-        <h4>Modulo 12: Atributos</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
-      <article>
-        <h4>Modulo 13: Metodos</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
-      <article>
-        <h4>Modulo 14: Usar objetos, sus metodos y sus atributos</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
-      <article>
-        <h4>Modulo 15: Conseptos de la Programacion orientada a objetos</h4>
-        <p>Tipos de datos</p>
-        <ul>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
-      </article>
-
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nobis voluptas amet asperiores laudantium, deserunt rem ratione tempore esse consectetur consequuntur natus laborum facilis ipsa iste minima? Nulla, velit omnis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nam possimus voluptatem similique debitis architecto minus amet! Ipsam non excepturi, fugiat similique ut illo? Dolore ducimus qui cum id consectetur?
+        Pariatur cum fuga, dolor blanditiis vitae molestiae sunt quisquam, tempora ullam quas dignissimos nisi sit, saepe mollitia? Eos, totam? Dolorum adipisci tempora labore aliquid itaque ullam optio illo totam perspiciatis?
+        Voluptatum magnam ad labore, eveniet fuga distinctio assumenda corporis voluptates adipisci harum ipsum doloremque nam tempora veritatis illum nobis quod possimus dolore placeat ratione mollitia? Officiis assumenda aut inventore quae?
+        Facilis illo iusto doloribus voluptatem error molestiae excepturi laborum, hic magnam doloremque accusamus quaerat culpa explicabo unde in est voluptate labore maxime nihil eos, amet corporis! Dignissimos voluptatem alias distinctio.
+        Officiis, accusamus. Corrupti eveniet perferendis, tempore quasi quis error ullam possimus distinctio aperiam non architecto esse harum dolores saepe molestiae ea doloribus nam enim? Enim eos accusantium in quisquam dolorem?</p>
     </div>
+
   </main>
+  
 
   <footer>
 
   </footer>
 </body>
+
+<script src="./js/script.js"></script>
 
 </html>

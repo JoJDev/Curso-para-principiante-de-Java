@@ -1,0 +1,47 @@
+.btn_temario{
+    display: none;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+}
+
+main{
+    grid-area: main;
+}
+
+header{
+    grid-area: header;
+}
+
+.contenido{
+    margin: 0;
+    width: 70vw;
+}
+
+@mixin navLaterales() {
+    grid-area: menu;
+    left: 0;
+    width: 22vw;
+    position: relative;
+}
+
+.temario{
+    @include navLaterales();
+    display: block;
+}
+
+.diccionario{
+    @include navLaterales();
+    top:5%;
+    z-index: 1;
+}
+
+footer{
+    grid-area: footer;
+
+}
