@@ -8,12 +8,14 @@ $tipado : 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Un
 body {
   background-color: $color60;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: $colorNero;
   font-family: $tipado;
 }
 
 img{
-  max-width: 90vw; 
+  max-width: 85vw; 
   display:block; 
   margin:auto;
 }
@@ -48,7 +50,7 @@ header {
       align-items: center;
 
       a {
-        min-width: 100%;
+        width: 100%;
         padding: 10px 0;
         border-radius: 0.5rem;
         text-decoration: none;
@@ -101,16 +103,16 @@ main {
   }
 }
 
-.contenido{
-  width: 100%;
-}
+// .contenido{
+//   //width: 100%;
+// }
 
 @mixin navLaterales($aparicionHacia: "derecha") {
   display: none;
   position: absolute;
-  width: 90vw;
-  height: 50rem;
-  left: 5%;
+  width: 95vw;
+  height: 100vh;
+  left: 2%;
   background-color: $color60;
 }
 

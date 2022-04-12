@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso para princiantes de Java</title>
+
+  <!---->
+  <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="./../index.html">
+      <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+    </a>
+    <nav>
+      <ul>
+        <li class="btn_temario">
+          <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+        </li>
+        <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+        <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+        <li class="btn_diccionario">
+          <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+  <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+  <main>
+    <div class="contenido">
+      <h1>Instalar el JDK</h1>
+
+      <p>
+        Java no está preinstalado en los Sistemas Operativos desde el
+        principio, así que hay que instalarlo primero, para ello instalamos el
+        <strong><i>kit de desarrollo de Java o Java Developer Kit</i></strong>
+        (JDK), que es un set de herramientas para programar con Java y debe
+        ser instalado para desarrollar programas en este lenguaje, en él se
+        incluyen el Java Runtime Environment (JRE), un intérprete / cargador
+        (Java), un compilador (javac), un archivador (jar), un generador de
+        documentación (Javadoc) y otras herramientas necesarias en el
+        desarrollo de Java.
+      </p>
+
+
+      <p>El <strong><i>Java Runtime Environment</i></strong> proporciona los requisitos mínimos para ejecutar una
+        aplicación Java; consta de la
+        máquina virtual Java (JVM), paqueterías principales y archivos de soporte. Si no quieres desarrollar programas
+        Java, pero si poder ejecutarlos, solo instala el runtime enviroment. </p>
+
+      <p>Esto significa que con solo instalar el JDK, tendremos lo necesario para desarrollar en Java y para empezar la
+        instalación, sigue los siguientes pasos:</p>
+
+      <ol>
+        <li>
+          <p>Ve a la página web oficial de Oracle (<a href="https://www.oracle.com/mx/index.html" target="_blank"
+              rel="noopener noreferrer">https://www.oracle.com/mx/index.html</a>) y crea una cuenta gratuita para poder
+            descargar el JDK</p>
+          <img src="./img/cap3_instalarJDK1.png" alt="Instalar JDK - paso 1" style="width: 70%;">
+        </li>
+        <li>
+          <p>Si tienes dudas de que poner en las casillas de “cargo” y “nombre de empresa” del formulario, puedes decir
+            que eres estudiante y poner la institución en la que estudias y su dirección o si ya tienes una cuenta,
+            puedes usar esa.</p>
+          <img src="./img/cap3_instalarJDK2.png" alt="Instalar JDK - paso 2">
+        </li>
+        <li>
+          <p>Una vez creada y confirmada tu cuenta de Oracle, dirígete al siguiente enlace:
+            <a href="https://www.oracle.com/java/technologies/downloads/" target="_blank"
+              rel="noopener noreferrer">https://www.oracle.com/java/technologies/downloads/</a> y desplázate hacia abajo
+            hasta encontrar la sección de
+            Java 8, Java esta hasta la versión 17, pero nosotros usaremos la versión 8, así que, selecciona la opción de
+            Sistema Operativo que ocupes (en mi caso es Windows) y descarga el instalador según tu versión de S.O. (i586
+            o x64), los Windows de hoy en día suelen ser de 64 bits (x64) pero si este instalador te da error, prueba
+            con el otro de 32 bits (i586).
+          </p>
+          <img src="./img/cap3_instalarJDK3.png" alt="Instalar JDK - paso 3" style="width: 70%;">
+        </li>
+        <li>
+          <p>Una vez descargado el instalador, le das doble clic para ejecutar el instalador, las opciones que están por
+            defecto son suficientes, así que solo hay que dale en “next” cada vez que aparezca la opción
+          </p>
+          <img src="./img/cap3_instalarJDK4.png" alt="Instalar JDK - paso 4">
+        </li>
+        <li>
+          <p>Y listo, ya tienes instalado Java 8 en tu equipo, deberías poder usar java gracias a esta instalación, pero
+            si hay un error, revisa el siguiente capitulo que veremos a continuación.</p>
+          <img src="./img/cap3_instalarJDK5.png" alt="Instalar JDK - paso 5">
+        </li>
+      </ol>
+
+      <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+        <a href="./cap2.html">&lt; Anterior</a>
+        <a href="./../index.html"> Temario</a>
+        <a href="./cap4.html">Siguiente &gt;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso para princiantes de Java</title>
+
+  <!---->
+  <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="./../index.html">
+      <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+    </a>
+    <nav>
+      <ul>
+        <li class="btn_temario">
+          <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+        </li>
+        <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+        <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+        <li class="btn_diccionario">
+          <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+  <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+  <main>
+    <div class="contenido">
+      <h1>Instalar un editor de código</h1>
+
+      <p>
+        Es posible escribir y desarrollar código usando el bloc de notas tradicional del sistema, pero existen
+        herramientas que nos ayudan a la hora de codificar los programas dándonos utilidades como resaltado de palabras
+        clave y sintaxis, tabulación automática, compilación y ejecución del código entre muchas otras, se llaman
+        editores de código y te recomendaremos uses alguna de las siguientes opciones.
+      </p>
+
+      <ul>
+        <li>
+          <h3>Visual Studio Code</h3>
+          <p>Creado por Microsoft, es el editor de código más utilizado por los desarrolladores (no confundir con su
+            versión de C# - Visual Studio, sin el <strong><i>Code</i></strong>), es ligero y gratuito, multiplataforma y
+            se le puede instalar
+            varias utilidades extra (desde su manejador de extensiones) para cualquier lenguaje de programación,
+            incluyendo java y por eso, es el que más recomendamos usar.</p>
+          <img src="./img/cap5_vscode.png" alt="Interfaz de Visual Studio Code">
+          <a href="https://www.youtube.com/watch?v=X_Z7d04x9-E">Como intalar VScode</a>
+        </li>
+        <li>
+          <h3>Atom</h3>
+          <p>Editor de código moderno y ligero para escribir código de varios lenguajes y una gran alternativa de Visual
+            Studio Code, si no te gusto el anterior editor de código, usa este, es practico y simple para los que apenas
+            comienzan a programar, solo abres un documento nuevo, específicas el nombre y la extensión y listo, a
+            programar.</p>
+          <img src="./img/cap5_atom.png" alt="Interfaz de Atom">
+          <a href="https://www.youtube.com/watch?v=eh1zkeXhUXs">Como instalar Atom</a>
+        </li>
+        <li>
+          <h3>Notepad ++</h3>
+          <p>Algo antiguo, pero igual de útil es el editor de código Notepad ++, que maneja varios lenguajes de
+            programas, color de sintaxis y utilidades básicas para desarrollar código en él, es portable, sencillo y
+            gratuito, una opción más si Visual Studio Code no te convenció.</p>
+          <img src="./img/cap5_notepad.png" alt="Interfaz de Notepad++">
+          <a href="https://www.youtube.com/watch?v=K-Usdv3azGk">Como instalar Notepad ++</a>
+        </li>
+        <li>
+          <h3>IntelliJ IDEA</h3>
+          <p>Más que un editor de código, IntelliJ IDEA es un entorno de desarrollo integrado (IDE) que es un software
+            para el diseño de aplicaciones que combina herramientas comunes para desarrolladores en una sola interfaz de
+            usuario gráfica, y este es especializado en Java, Aunque puede ser complejo de usar, tiene todo lo que un
+            desarrollador en Java necesita, pero no se recomienda usarlo si eres principiante ya que es complicado de
+            emplear y no está en español, lo que dificulta su uso en recién entrados al desarrollo de software.</p>
+          <img src="./img/cap5_intelliJ_IDEA.png" alt="Interfaz de IntelliJ">
+          <a href="https://www.youtube.com/watch?v=dKCnUWpDJbE">Como instalar IntelliJ IDEA</a>
+        </li>
+        <li>
+          <h3>Eclipe</h3>
+          <p>Eclipse también es un IDE muy bueno para Java SE, no tan liviano como un editor de código, pero muy útil a
+            la hora de desarrollar aplicaciones en java y en los otros lenguajes que soporta, es un poco antiguo, pero
+            adecuado para los que recién empiezan a desarrollar programas informáticos y no tiene nada que envidiarle a
+            otros IDEs como InteillJ IDEA.</p>
+          <img src="./img/cap5_eclipse.png" alt="Interfaz de Eclipe">
+          <a href="https://www.youtube.com/watch?v=_KagCuPFw2w">Como instalar Eclipe</a>
+        </li>
+      </ul>
+
+      <p>Cualquiera de estas opciones está bien para este curso, pero recomendamos usar Visual Studio Code (e instalarle
+        las extensiones de Java) porque ese es el editor de código que se usó en la creación de este curso y es la
+        herramienta más accesible para los nuevos a la hora de programar.</p>
+
+      <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+        <a href="./cap4.html">&lt; Anterior</a>
+        <a href="./../index.html"> Temario</a>
+        <a href="./../cuestionarios/mod1_preguntas.html">Siguiente &gt;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

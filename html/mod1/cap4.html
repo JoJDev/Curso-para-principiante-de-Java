@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso para princiantes de Java</title>
+
+  <!---->
+  <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="./../index.html">
+      <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+    </a>
+    <nav>
+      <ul>
+        <li class="btn_temario">
+          <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+        </li>
+        <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+        <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+        <li class="btn_diccionario">
+          <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+  <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+  <main>
+    <div class="contenido">
+      <h1>Crear las variables de entorno</h1>
+
+      <p>
+        Si todo salió bien, ya podrás usar Java sin problemas, para comprobar lo, busca en el buscador de programas un
+        programa llamado “CMD” o símbolo del sistema que sirve para ejecutar comandos en la PC y abre lo, la tienen
+        todos los Windows (o una “terminal” para otros S.O.), aquí escribimos el comando “<i>java -version</i>” y si te
+        muestra
+        la versión de java que instalaste, todo está correctamente instalado.
+      </p>
+
+      <img src="./img/cap4_CMD_Jav_instalado.png" alt="CMD confirmando que Java esta instalado">
+
+      <p>Pero si no da con el resultado anterior, tocara moverle un poco a tu PC para poder ejecutar Java y eso lo
+        hacemos en las <strong><i>variables de entorno</i></strong>. Las variables de entorno son para guardar y
+        consultar información que forma
+        parte del Sistema Operativo en el que se ejecuta un programa y son necesarias para el funcionamiento de éstos.
+        Por ejemplo, un programa o proceso en ejecución puede consultar el valor de la variable de entorno <i>TEMP</i>
+        para
+        descubrir una ubicación adecuada para almacenar archivos temporales, o la variable <i>HOME</i> o
+        <i>USERPROFILE</i> para
+        encontrar la estructura de directorios propiedad del usuario que ejecuta el proceso.
+      </p>
+
+      <p>Y hablamos de variables de entorno porque Java requiere que indiquemos que indiquemos en la variable de entorno
+        <strong><i>PATH</i></strong> la ruta de sus ejecutables para así poder usar sus comandos y herramientas de
+        desarrollo, y para ello,
+        sigue los siguientes pasos:
+      </p>
+
+      <ol>
+        <li>
+          <p>Abre un explorador de archivos y haz clic derecho en el icono de “este equipo” y selecciona la opción de
+            “propiedades”.</p>
+          <img src="./img/cap4_var_ent (1).png" alt="Paso 1 para cambiar las variables de entorno">
+        </li>
+        <li>
+          <p>Aparecerá una ventana con las características de tu sistema, vas a hacer clic en el enlace “configuración
+            avanzada del sistema” en la parte izquierda (en Windows 10 se localiza a la derecha, en Windows 8 a la
+            izquierda) para abrir la sección de “propiedades del sistema”</p>
+          <img src="./img/cap4_var_ent (2).png" alt="Paso 2 para cambiar las variables de entorno">
+        </li>
+        <li>
+          <p>Aparecerá otra ventana un poco más pequeña, le damos clic en la opción “variables de entorno” en la parte
+            de abajo</p>
+          <img src="./img/cap4_var_ent (3).png" alt="Paso 3 para cambiar las variables de entorno">
+        </li>
+        <li>
+          <p>Entonces se abrirá la ventana de las variables de entorno, estará dividida en dos secciones, variables de
+            usuario (arriba) y variables de sistema (abajo), ahora hacemos doble clic a la variable PATH del sistema
+            (abajo) para poder agregar la ruta del directorio de Java.</p>
+          <img src="./img/cap4_var_ent (4).png" alt="Paso 4 para cambiar las variables de entorno">
+        </li>
+        <li>
+          <p>Para ello, en la parte de “valor de la variable” hay que agregar la dirección en tu disco duro de los
+            binarios de Java, generalmente se encuentra en C:\Program Files\Java\<tu_versión_de_java>\bin, pero
+              asegúrate visitando el enlace, si todo está en orden, <strong><i>agrega</i></strong> (no borres nada,
+              agrega) el siguiente texto
+              (sin las comillas) al final de la cadena de texto “;C:\Program Files\Java\jdk1.8.0_321\bin”, esto es la
+              dirección en el PC de java que comprobaste (si tienes Windows 10, ponlo hasta debajo de la lista). Pon en
+              “aceptar”</p>
+          <img src="./img/cap4_var_ent (5).png" alt="Paso 5 para cambiar las variables de entorno">
+        </li>
+        <li>
+          <p>Y eso sería todo, vuelve a comprobar si Java esta bien instalado con el CMD y si aun hay error, revisa que
+            hayas agregado la ruta adecuadamente en la variable de entorno indicada.</p>
+          <img src="./img/cap4_var_ent (6).png" alt="Paso 6 para cambiar las variables de entorno">
+        </li>
+      </ol>
+
+
+
+      <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+        <a href="./cap3.html">&lt; Anterior</a>
+        <a href="./../index.html"> Temario</a>
+        <a href="./cap5.html">Siguiente &gt;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

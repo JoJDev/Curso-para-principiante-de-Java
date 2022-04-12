@@ -14,25 +14,32 @@ main{
     grid-area: main;
 }
 
+img{
+    width: 35vw;
+}
+
 header{
     grid-area: header;
 }
 
 .contenido{
-    margin: 0;
-    width: 70vw;
+    margin: 0 3%;
+
 }
 
 @mixin navLaterales() {
     grid-area: menu;
     left: 0;
     width: 22vw;
+    height: 100%;
     position: relative;
+
 }
 
 .temario{
     @include navLaterales();
     display: block;
+    border: none;
 }
 
 .diccionario{
@@ -43,5 +50,4 @@ header{
 
 footer{
     grid-area: footer;
-
 }
