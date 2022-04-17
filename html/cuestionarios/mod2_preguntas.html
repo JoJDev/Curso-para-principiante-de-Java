@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso para princiantes de Java</title>
+
+    <!---->
+    <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./../index.html">
+            <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="btn_temario">
+                    <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+                </li>
+                <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+                <li class="btn_diccionario">
+                    <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+    <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+    <main>
+        <div class="contenido">
+            <h1>Cuestionario del modulo 2: Primer programa en Java</h1>
+            <p>
+                Contesta las preguntas seleccionando la opción  correcta
+            </p>
+
+            <div class="preguntas">
+                <p>1-	¿Cuál es el comando para imprimir un mensaje en pantalla?</p>
+                <input type="radio" id="a1" name="preg1" value="a">
+                <label for="a1">a)	system.out.println( );</label><br>
+                <input type="radio" id="b1" name="preg1" value="B">
+                <label for="b1">b)	System.out.println( );</label><br>
+                <input type="radio" id="c1" name="preg1" value="c">
+                <label for="c1">c)	System.imp.println( );</label><br>
+                <input type="radio" id="d1" name="preg1" value="d">
+                <label for="d1">d)	System.println( );</label>
+
+                <p>2-	¿Para qué sirve la función main?</p>
+                <input type="radio" id="a2" name="preg2" value="a">
+                <label for="a2">a)	Para utilizar un comando que imprima en pantalla un mensaje</label><br>
+                <input type="radio" id="b2" name="preg2" value="b">
+                <label for="b2">b)	Para hacer público el código escrito</label><br>
+                <input type="radio" id="c2" name="preg2" value="c">
+                <label for="c2">c)	No sirve para nada, es solo la estructura de Java</label><br>
+                <input type="radio" id="d2" name="preg2" value="D">
+                <label for="d2">d)	Para indicar donde se empezará a ejecutar el programa</label>
+
+                <p>3-	¿Cómo escribes un comentario de una sola línea?</p>
+                <input type="radio" id="a3" name="preg3" value="a">
+                <label for="a3">a)	/* */</label><br>
+                <input type="radio" id="b3" name="preg3" value="b">
+                <label for="b3">b)	\\</label><br>
+                <input type="radio" id="c3" name="preg3" value="C">
+                <label for="c3">c)	//</label><br>
+                <input type="radio" id="d3" name="preg3" value="d">
+                <label for="d3">d)	{ }</label>
+
+                <p>4-	¿Cómo escribes un comentario en bloque?</p>
+                <input type="radio" id="a4" name="preg4" value="a">
+                <label for="a4">a)	{  }</label><br>
+                <input type="radio" id="b4" name="preg4" value="B">
+                <label for="b4">b)	/* */</label><br>
+                <input type="radio" id="c4" name="preg4" value="c">
+                <label for="c4">c)	/* /*</label><br>
+                <input type="radio" id="d4" name="preg4" value="d">
+                <label for="d4">d)	/{  }/</label>
+
+                <p>5-	¿Qué es la<strong><i> sintaxis</i></strong> aplicada a un lenguaje de programación?</p>
+                <input type="radio" id="a5" name="preg5" value="a">
+                <label for="a5">a)	Es el modo de combinarse y ordenarse las palabras y las expresiones dentro del discurso</label><br>
+                <input type="radio" id="b5" name="preg5" value="b">
+                <label for="b5">b)	Son los comandos del lenguaje de programación que estamos usando</label><br>
+                <input type="radio" id="c5" name="preg5" value="C">
+                <label for="c5">c)	Son el conjunto de reglas que deben seguirse al escribir el código para considerarse como correctos para ese lenguaje</label><br>
+                <input type="radio" id="d5" name="preg5" value="d">
+                <label for="d5">d)	Son las tecnologías necesarias para poder ejecutar un programa informático</label>
+
+                <p>6-	¿Cuál <strong><i>no</i></strong> es una de las principales dificultades de los primerizos al aprender a programar?</p>
+                <input type="radio" id="a6" name="preg6" value="A">
+                <label for="a6">a)	Ejecutar los programas correctamente</label><br>
+                <input type="radio" id="b6" name="preg6" value="b">
+                <label for="b6">b)	Ser muy específico en las instrucciones</label><br>
+                <input type="radio" id="c6" name="preg6" value="c">
+                <label for="c6">c)	Las palabras especiales (sintaxis) están en inglés </label><br>
+                <input type="radio" id="d6" name="preg6" value="d">
+                <label for="d6">d)	Los errores ortográficos </label>
+            </div>
+            <hr>
+            <input type="button" value="Revisar" onclick="revisar(6);">
+
+            <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+                <a href="./../mod2/cap5.html">&lt; Anterior</a>
+                <a href="./../index.html"> Temario</a>
+                <a href="./../mod3/cap1.html">Siguiente &gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+<script>
+    function revisar(numPreguntas) {
+
+        // let element = document.getElementById("a1");
+        // alert(element.checked);
+        const opciones = ["a", "b", "c", "d"];
+        for (let i = 1; i < numPreguntas + 1; i++) {
+            for (let j = 0; j < opciones.length; j++) {
+                let element = document.getElementById(opciones[j] + i.toString());
+                let elemValue = document.getElementById(opciones[j] + i.toString()).value;
+                if (element.checked){
+                    if(elemValue == elemValue.toUpperCase())
+                        element.nextElementSibling.style.backgroundColor = "#16c60c";
+                    else
+                        element.nextElementSibling.style.backgroundColor ="#ee0707";
+                }
+                else
+                    element.nextElementSibling.style.backgroundColor = "";
+            }
+        }
+    }
+</script>
+
+</html>

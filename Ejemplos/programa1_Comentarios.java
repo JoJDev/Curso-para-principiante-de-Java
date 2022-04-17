@@ -1,4 +1,7 @@
-public class programa2_Comentarios{
+// Comentarios.java
+// Modulo 2 - capitulo 5
+
+public class programa1_Comentarios{
     public static void main(String[] args) {
 
         // Esto es un comentario

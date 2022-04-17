@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso para princiantes de Java</title>
+
+    <!---->
+    <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./../index.html">
+            <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="btn_temario">
+                    <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+                </li>
+                <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+                <li class="btn_diccionario">
+                    <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+    <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+    <main>
+        <div class="contenido">
+            <h1>Introducción: ¿Qué son las variables?</h1>
+
+            <p>
+                Programar una aplicación o programa informático consiste en escribir y escribir código en forma de
+                instrucciones para que la computadora realice esas instrucciones, pero para los principiantes hay varios
+                puntos que se les puede dificultar como lo son:
+            </p>
+
+            <p><strong><i>Tienes que ser muy específico</i></strong>: es como tratarle de darle órdenes a un robot,
+                tienes que ser lo más meticuloso y especifico posible, no puedes ordenarle que solo “camina hacia alla”,
+                tienes que darle instrucciones paso a paso para que “camine hacia alla”, como pudiera ser “levanta
+                pierna izq (10 cm)”, “rota pierna izq (45°, en eje x)”, “baja pierna izq (10 cm)”, “levanta pierna der
+                (10 cm)”, “rota pierna der (45°, en eje x)”, “baja pierna der (10 cm)” y así, hasta “caminar” al punto
+                donde tu querías. Es igual en las PC y en la programación, paso a paso de forma muy específica (yo lo
+                llamo lógica de programación).</p>
+
+            <p>
+                <strong><i>Aprender las palabras especiales que están en inglés</i></strong>: Los lenguajes de
+                programación esta hechos para acercar el lenguaje máquina al lenguaje humano pero la mayoría de los
+                lenguajes de programación, si no es que todos, están en inglés, esto es porque la programación fue
+                desarrollándose en los Estados Unidos (USA) principalmente y estos lenguajes fueron hechos por
+                estadounidenses, que hablan inglés, por lo que las palabras clave (como if, while, break, etc.) no dan
+                mucho sentido para quien no hable Ingles, aunque no son muchas palabras, por lo que no es tanto
+                problema. (Pro tip: aprende inglés y dominaras el mundo :D)
+            </p>
+
+            <p>
+                <strong><i>Cuidarte de los errores de ortografía</i></strong>: Las maquinas son muy específicas, por lo
+                que si hay una palabra que no identifican por un error de ortografía o por falta de un símbolo, darán
+                error en el programa o actuaran de forma inesperada dando resultados erróneos; un simple “ ; ” faltante
+                puede romper tu programa, y adivina quién tiene que revisar todo el código para encontrar el error, así
+                es, tú mismo, por suerte los compiladores nos dan una ayuda de donde puede estar el error.
+            </p>
+
+            <p>
+                Al principio será algo duro, pero practicando, jugando con el código y cometiendo errores para después
+                resolverlos podrás aprender a programar y desarrollaras tu lógica de programación, y después ya no te
+                costará tanto crear tu próxima aplicación, y la siguiente, y así.</p>
+
+
+            <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+                <a href="./../cuestionarios/mod2_preguntas.html">&lt; Anterior</a>
+                <a href="./../index.html"> Home</a>
+                <a href="./cap2.html">Siguiente &gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

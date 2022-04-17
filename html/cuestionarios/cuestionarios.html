@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso para princiantes de Java</title>
+
+  <!---->
+  <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="./../index.html">
+      <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+    </a>
+    <nav>
+      <ul>
+        <li class="btn_temario">
+          <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+        </li>
+        <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+        <li><a href="#" style="background-color: silver;">Cuestionarios</a></li>
+        <li class="btn_diccionario">
+          <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+  <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+  <main>
+    <div class="contenido">
+      <h1>titulo</h1>
+
+      <p>
+        texto: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum fugiat eaque nam molestiae doloremque
+        magnam nesciunt sint quisquam vitae animi voluptatem neque quod, amet deserunt exercitationem pariatur
+        architecto totam quasi?
+      </p>
+
+
+      <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+        <a href="./cap2.html">&lt; Anterior</a>
+        <a href="./../index.html"> Temario</a>
+        <a href="./cap4.html">Siguiente &gt;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>
