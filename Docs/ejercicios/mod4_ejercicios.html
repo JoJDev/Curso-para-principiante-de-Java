@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso para princiantes de Java</title>
+
+  <!---->
+  <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+  <link rel="stylesheet" href="./../css/style.css" />
+  <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+  <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="./../index.html">
+      <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+    </a>
+    <nav>
+      <ul>
+        <li class="btn_temario">
+          <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+        </li>
+        <li><a href="#" style="background-color: silver;">Ejercicios</a></li>
+        <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+        <li class="btn_diccionario">
+          <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+  <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+  <main>
+    <div class="contenido">
+      <h1>Ejercicios del modulo 4: Cadenas de texto</h1>
+
+      <ol>
+        <li>
+          <p>Crea un programa que cree y muestre una variable de cada tipo con las siguientes características (tú puedes elegir el nombre de las variables):</p>
+          <ul>
+            <li>Una variable tipo byte que contenga el valor 120</li>
+            <li>Una variable tipo short que contenga el valor -40</li>
+            <li>Una variable tipo int que contenga el valor 1,478,963,250</li>
+            <li>Una variable tipo long que contenga el valor del int anterior, pero x2</li>
+            <li>Una variable tipo float que contenga el valor 9.9</li>
+            <li>Una variable tipo double que contenga el valor PI con 4 dígitos después del punto</li>
+            <li>Una variable tipo booleana que contenga el valor de falso</li>
+            <li>Una variable tipo char que contenga la primera letra en mayúscula de tu nombre</li>
+          </ul>
+          <br>
+
+          <p><i>Salida</i>:
+            <p><i>Mi inicial es j</i></p>
+            <img src="./img/eje1_mod3_salida.png" alt="Salida del ejercicio 1 del modulo 3" style="width: 20%;">
+          </p>
+        </li>
+        <br>
+
+        <li>
+          <p>
+            Del siguiente programa, averigua cuales variables están erróneamente nombradas y arréglalas, no vale cambiar el nombre por completo, solo eliminar los errores de nombrado (recuerda las reglas para nombrar una variable recuerda también renombrarlas en la sección donde se imprimen; ejecuta el programa para ver si están bien nombradas.
+          </p>
+          <code><pre>
+  public class Ejercicio2Mod3_NombreVariables {
+    public static void main(String[] args) {
+        int totalVentas = 40;
+        byte $dinero = 100;
+        int saldo-Juan = 10;
+        char 1letra = 'a';
+        short ley304 = 300; 
+        float numeroCon. = 3.14f;
+    
+        System.out.println(totalVentas);
+        System.out.println($dinero);
+        System.out.println(saldo-Juan);
+        System.out.println(1letra);
+        System.out.println(ley304);
+        System.out.println(numeroCon.);
+    }  
+  }          
+          </pre></code>
+          <p>
+            <i>Salida:</i>
+            <img src="./img/eje2_mod3_salida.png" alt="Salida del ejercicio 2 del modulo 3" style="width: 20%;">
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Crea dos variables constantes de tipo int y darles un valor, después súmalas, réstalas, multiplícalas y divídelas para guardar el resultado en diferentes variables y mostrarlo en pantalla, si se ejecuta correctamente mostrando el resultado de cada operación, completaras el ejercicio.
+          </p>
+          <p>
+            <i>Salida:</i>
+            <p><i>Mis numeros elegidos: 5 y 10</i></p>
+            <img src="./img/eje3_mod3_salida.png" alt="salida del ejercicio 2 del modulo 3" style="width: 20%;">
+          </p>
+        </li>
+      </ol>
+      <br>
+      <p>
+        Codigo: 
+        <ul>
+          <li><a href="">Ejercicio 1 - Modulo 3</a></li>
+          <li><a href="">Ejercicio 2 - Modulo 3</a></li>
+          <li><a href="">Ejercicio 3 - Modulo 3</a></li>
+        </ul>
+      </p>
+
+
+      <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+        <a href=" ./../mod2/cap6.html">&lt; Anterior</a>
+        <a href="./../index.html"> Temario</a>
+        <a href="./../cuestionarios/mod3_preguntas.html">Siguiente &gt;</a>
+      </div>
+    </div>
+  </main>
+
+  <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

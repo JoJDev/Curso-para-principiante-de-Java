@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso para princiantes de Java</title>
+
+    <!---->
+    <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./../index.html">
+            <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="btn_temario">
+                    <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+                </li>
+                <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+                <li class="btn_diccionario">
+                    <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+    <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+    <main>
+        <div class="contenido">
+            <h1>Crear variables</h1>
+
+            <p>
+                Para crear una variable debes indicar el tipo de dato que guardara y como se llamara, para poder referirnos a ella más adelante en el programa, por lo que podemos decir que, por ejemplo, “la variable <x> es de tipo <y>”, ya que, una vez creada, una variable no puede cambiar el tipo de dato que guarda. Para crear una variable en Java, sigue la siguiente estructura y no olvides el punto y coma ( ; ):
+            </p>
+
+            <code><pre style="text-align: center; margin: 40px 0; font-size: larger;">
+&lt;tipo_variable&gt; &lt;nombre_de_la_variable&gt;;
+            </pre></code>
+
+            <p>Ejemplos:</p>
+            <img src="./img/cap3_crear_variables.png" alt="Ejemplos de crear una variable">
+
+            <p>
+                Esto crea la variable, pero no contiene ningún valor, para utilizarlas, primero debemos darle un valor, esto lo hacemos con el símbolo de igual ( = ), sigue la siguiente sintaxis:
+            </p>
+            <code><pre style="text-align: center; margin: 40px 0; font-size: larger;">
+&lt;nombre_variable&gt; = &lt;valor&gt;;
+            </pre></code>
+
+            <p>
+                Veamos en el programa 2 como crear, asignarle y posteriormente visualizar un valor de una variable tipo int.
+            </p>
+            <img src="./img/cap3_asignar_variables.png" alt="Ejemplo de asignar una">
+
+            <p>
+                Como vemos, en la línea 4 declaramos una variable de tipo int con el nombre de numero y después en la línea 5 estamos diciendo que la variable numero que creamos sea igual a 4, es decir, le estamos asignando un valor a la variable para que lo guarde y en la línea 7, estamos pidiendo que muestre el valor con la función “System.out.println( );” (numero no está entre comillas dobles aquí porque es una variable de tipo int, no una cadena de texto) y efectivamente, el valor de nuestra variable se muestra en consola.
+            </p>
+            <img src="./img/cap3_variable_consola.png" alt="Resultado de en consola">
+
+            <p>
+                También podemos asignar el valor de una variable en la misma línea en la creamos y vemos que sigue siendo lo mismo 
+            </p>
+            <img src="./img/cap3_crear_asignar_variable.png" alt="Crear y asignar una variable en la misma linea">
+
+            <p>
+                Aquí el tipo de variable no afecta, esta es una forma rápida de crear y asignar variables, de hecho, la única razón para solo crear una variable sin asígnale seguidamente de un valor es por qué le vas a dar un valor después durante la ejecución del programa.            </p>
+            <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+                <a href="./cap2.html">&lt; Anterior</a>
+                <a href="./../index.html"> Home</a>
+                <a href="./cap4.html">Siguiente &gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

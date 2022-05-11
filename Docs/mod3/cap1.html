@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso para princiantes de Java</title>
+
+    <!---->
+    <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./../index.html">
+            <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="btn_temario">
+                    <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+                </li>
+                <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+                <li class="btn_diccionario">
+                    <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+    <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+    <main>
+        <div class="contenido">
+            <h1>Introducción: ¿Qué son las variables?</h1>
+
+            <p>
+                Una <strong><i>variable</i></strong> es un espacio en memoria (memoria de la computadora) que sirve para almacenar datos o valores, representados como números, texto, un carácter o un simple “si” o ”no”. Las variables generalmente se les presentan como “cajas” que pueden guardar datos que requerimos para procesarlos.
+            </p>
+
+            <img src="./img/cap1_variable_como_caja.png" alt="Ver una variable como una caja" style="width: 250px;">
+
+            <p>
+                Una analogía de las variables en programación es considerarlas como "<strong><i>recipientes</i></strong>” de cocina; para cocinar una receta, necesitamos ingredientes, y esos ingredientes debe de estar en recipientes, que los contengan y pueden ser usarlos a la hora de preparar tu receta, eso es lo que hace las variables, “contienen” los ingredientes (datos) que requerimos a la hora de programar.
+            </p>
+
+            <p>
+                Se les llama así porque son de valor “<strong><i>variable</i></strong>”, puedes ponerles un valor y después cambiárselo, aplicarle operaciones de todo tipo (sumar, restar, comparar con otras variables, etc.), obtener el dato que almacenan, y muchas otras cosas. Para programar requerimos datos, introducidos ya sea por el usuario, por el sistema u otros medios, y los datos se guardan en estas <strong><i>variables</i></strong>, pero Java requiere que le especifiquemos el “tipo de valor” que esta variable va a guardar, esto para fijar el tamaño, las operaciones y los comandos que puedes realizarle a esta variable, si va a ser un número entero o decimal, un texto, un solo carácter, etc.
+            </p>
+
+            <img src="./img/cap1_variables_como_cajas.png" alt="diferentes tipos de variables tienen diferentes propiedades">
+
+            <p>Para empezar con las variables, debes saber sobre los tipos de datos que Java maneja.</p>
+
+            <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+                <a href="./../cuestionarios/mod2_preguntas.html">&lt; Anterior</a>
+                <a href="./../index.html"> Home</a>
+                <a href="./cap2.html">Siguiente &gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

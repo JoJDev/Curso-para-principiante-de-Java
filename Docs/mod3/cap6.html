@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso para princiantes de Java</title>
+
+    <!---->
+    <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./../index.html">
+            <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="btn_temario">
+                    <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+                </li>
+                <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+                <li class="btn_diccionario">
+                    <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+    <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+    <main>
+        <div class="contenido">
+            <h1>Variables constantes</h1>
+
+            <p>
+                Habrá ocasiones en las que quieras tener una variable en donde una vez asignado un valor, este no cambie
+                durante la ejecución del programa, ya sea para tener un valor constante o para que no se pueda cambiar
+                por accidente, para eso existen las variables constantes, las cuales, una vez asignado su valor, no se
+                pueda modificar a lo largo de la ejecución del programa, aun podrás leerlo para acceder a su valor, pero
+                cambiarlo no podrás. Esta es su sintaxis:
+            </p>
+            <code><pre style="text-align: center; margin: 40px 0; font-size: larger;">
+final &lt;tipo_variable&gt; &lt;nombre_variable&gt; = &lt;valor&gt;;
+            </pre></code>
+
+            <p>
+                Para hacer a una variable en constante, solo hace falta poner la palabra reservada final antes de la
+                declaración de tipo de la variable. Puedes crear una variable constante y asignarle un valor después,
+                pero una vez que ya tenga un valor, ya no podrá modificarse.
+            </p>
+
+            <p>
+                A continuación, un ejemplo de cómo usar y aprovechar una variable constante calculando el área de dos
+                círculos (radio * pi):
+            </p>
+            <img src="./img/cap6_calcular_area_circulo.png" alt="Calculando el area de circulos con constantes">
+
+            <p>
+                Como veras, las variables constantes tienen la convención de que deben de escribirse en mayúsculas y se separa cada palabra con un guion bajo ( _ ) , para denotar que son constantes y una vez asignado un valor a esta constante, ya no lo podremos cambiar, si lo intentamos, Visual Studio Code nos avisara que se detectó un error (gracias a las extensiones que le instalamos, detecta los errores antes de ejecutar el programa) y nos muestra con un subrayado rojo el error junto con su descripción (en inglés) (imagen 21).
+            </p>
+            <img src="./img/cap6_error_al_tratar_de_cambiar_valor_de_una_constante.png"
+                alt="Error al tratar de cambiar el valor de una constatnte" style="width: 90%;">
+
+            <p>
+                si alguien más trabaja con tu código, o un bloque de código externo usa tu constante, no la podrán
+                modificar ni alterarán el funcionamiento de tu programa.
+            </p>
+
+            <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+                <a href="./cap5.html">&lt; Anterior</a>
+                <a href="./../index.html">Home</a>
+                <a href="./../ejercicios/mod3_ejercicios.html">Siguiente &gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

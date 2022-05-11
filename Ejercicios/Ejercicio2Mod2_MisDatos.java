@@ -1,7 +1,9 @@
-//  Ejercicio 1 - MisDatos.java
-//  Modulo 2
+/**
+ * Ejercicio 1 - MisDatos.java
+ * Modulo 2
+ */
 
-public class MisDatos {
+public class Ejercicio2Mod2_MisDatos {
     public static void main(String[] args) {
         // Mostrando mi nombre
         System.out.println("Jesus");

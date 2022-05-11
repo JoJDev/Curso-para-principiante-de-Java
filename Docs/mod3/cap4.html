@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso para princiantes de Java</title>
+
+    <!---->
+    <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./../index.html">
+            <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="btn_temario">
+                    <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+                </li>
+                <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+                <li class="btn_diccionario">
+                    <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+    <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+    <main>
+        <div class="contenido">
+            <h1>Nombrar a una variable</h1>
+
+            <p>
+                Las variables pueden tener cualquier nombre, siempre y cuando no rompan con alguna de las siguientes
+                reglas:
+            </p>
+            <ul>
+                <li>Un nombre de variable se puede definir con uno o más caracteres.</li>
+                <li>No de tener espacios.</li>
+                <li>El primer carácter tiene que ser una letra (a, b, c...), el carácter guion bajo ( _ ) o el dólar
+                    ($).</li>
+                <li>Los siguientes caracteres pueden ser letras, el guión bajo, el dólar o dígitos (0, 1, 2...).</li>
+                <li>No puede ser alguna de las palabras reservadas que usa Java para sus comandos.</li>
+            </ul>
+
+            <p>
+                los siguientes nombres son identificadores de variables validos en Java:
+            </p>
+            <div style="text-align: center;">
+                <ul
+                    style="display: inline-block; padding: 0 3rem;text-align: left; border: solid 1px black; list-style-type: circle;">
+                    <li>ciudad</li>
+                    <li>codigoPostal</li>
+                    <li>codigo_postal</li>
+                    <li>numero2</li>
+                    <li>$total</li>
+                </ul>
+            </div>
+            <p>
+                Sin embargo, los siguientes identificadores no son válidos:
+            </p>
+            <div style="text-align: center;">
+                <ul
+                    style="display: inline-block; padding: 0 3rem;text-align: left; border: solid 1px black; list-style-type: disclosure-open;">
+                    <li>ciudad?</li>
+                    <li>codigo-postal</li>
+                    <li>2numero</li>
+                    <li>8.76v</li>
+                    <li>nombre@apellido</li>
+                </ul>
+            </div>
+
+            <p>
+                Existen varias palabras reservadas que Java utiliza para identificar las funcionalidades internas del lenguaje o sirven para describir al programa un tipo de valor, por lo que no puedes llamar a una variable igual a una palabra clave, ya que el compilador la confundiría como una función que quieres ejecutar en dé vez de una variable. A continuación, te mostramos una lista (tabla 1) de todas las palabras clave de Java 8 (puede haber más en versiones futuras de Java)
+            </p>
+            <img src="./img/cap4_palabras_clave.png" alt="Palabras clave a evitar como nombre de variables">
+
+            <p>
+                Existen también varias convenciones que no son obligatorias pero que todos los que desarrollan programas en Java tratan de seguir para tener un código más limpio y presentable. Recomendamos seguir tales convenciones como lo son:
+            </p>
+
+            <ul>
+                <li>La primera letra debe ser minúscula al nombrar una variable.</li>
+                <li>Utiliza nomenclatura camelCase.</li>
+                <li>Es recomendable utilizar nombres con un significado explícito, y en lo posible, cortos.</li>
+            </ul>
+
+            <p>
+                La nomenclatura camelCase es un estilo de escritura que se aplica a frases o palabras compuestas por dos o más palabras sin tener que separarlas con un espacio, tiene dos versiones, la camelcase y la UpperCamelCase. 
+            </p>
+
+            <p>
+                UpperCamelCase consiste en que la primera letra de cada palabra esté en mayúsculas, ejemplos: TotalVentas, SalaDeEstar, PromedioPonderado, y la versión camelCase, la normalita, es que todas las primeras letras de cada palabra estén en mayúsculas excepto la primera, ejemplos: totalVentas, salaPrincipal, corredorDeAccesoPrincipal, etc. camelCase es la nomenclatura que se usa por convención para las variables en Java.
+            </p>
+            <img src="./img/cap4_camelCase.png" alt="nomenclatura camelCase y UpperCamelCase">
+
+
+            <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+                <a href="./cap3.html">&lt; Anterior</a>
+                <a href="./../index.html"> Home</a>
+                <a href="./cap5.html">Siguiente &gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso para princiantes de Java</title>
+
+    <!---->
+    <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./../index.html">
+            <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="btn_temario">
+                    <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+                </li>
+                <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+                <li class="btn_diccionario">
+                    <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+    <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+    <main>
+        <div class="contenido">
+            <h1>Introducción: ¿Qué son las cadenas de texto?</h1>
+
+            <p>
+                Las cadenas de texto son un tipo especial de dato que sirven para guardar texto y, al contrario de un carácter, este es un tipo especial (no-primitivo) porque es prácticamente un conjunto de caracteres consecutivos en <i>cadena</i>, por eso se le llaman "cadena de texto" o <strong><i>String</i></strong> (<i>cadena</i> en inglés), pueden parecer un tipo de dato primitivo más pero tiene que ver más con los <strong>vectores</strong>; que son variables que pueden guardan otras variables en su interior, como una <i>variable de variables</i> (y que veremos más a futuro) que con los propios caracteres.  
+            </p>
+
+            <img src="./img/cap1_cadenas_de_texto.png" alt="Cadena de texto son caracteres en forma de cadena">
+
+            <p>Esto es así para poder manipular de varias y diversas maneras un dato tipo String (cadena de texto), poderle agregarle más texto, sustraer una sub-cadena de texto de la propia cadena, buscar un conjunto de caracteres o sub-cadenas, entre muchas otras operaciones. </p>
+            <p>Es muy común usar texto en la programación, tanto para dar mensajes como para recibir información del usuario o de cualquier otro medio (generalmente se recibe en forma de texto), por eso tiene un módulo entero donde se ahondará en cómo crearlas y manipularlas, las operaciones que puedes realizar con ellas, calcular su longitud y otras funciones y comandos para sacarles el máximo provecho.</p>
+            <p>Un ejemplo de uso de las cadenas de texto es el propio CMD, que solo se comunica con texto, y si pide datos, se la daremos en forma de texto (aun si le pasamos números, este los tomara como texto), como se ve en la imagen de abajo que muestra un programa que veremos en posteriores módulos pero muestra claramente el uso de cadenas de texto en Java</p>
+            <img src="./img/cap1_importancia_textos.png" alt="Ejemplo de uso de los String">
+
+
+            <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+                <a href="./../cuestionarios/mod3_preguntas.html">&lt; Anterior</a>
+                <a href="./../index.html"> Home</a>
+                <a href="./cap2.html">Siguiente &gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

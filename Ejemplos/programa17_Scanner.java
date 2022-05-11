@@ -4,6 +4,9 @@ public class programa17_Scanner {
     public static void main(String[] args) {
         Scanner lector = new Scanner(System.in);
 
+        System.out.println("Por favor, ingresa tu nombre");
+        String nombre2 = lector.nextLine();
+
         System.out.println("¿Quien eres?");
         String nombre = lector.nextLine();
         

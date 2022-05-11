@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso para princiantes de Java</title>
+
+    <!---->
+    <link rel="text/plain" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css" />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/styleTablet.css" media="(min-width: 768px)" />
+    <link rel="stylesheet" href="./../css/styleDesk.css" media="(min-width: 1080px)" />
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="./../index.html">
+            <h1>Curso de programaci&oacute;n con Java para principiantes</h1>
+        </a>
+        <nav>
+            <ul>
+                <li class="btn_temario">
+                    <a href="#" onclick="convocarTemario(document.getElementById('temario'))">Temario</a>
+                </li>
+                <li><a href="./../ejercicios/ejercicios.html">Ejercicios</a></li>
+                <li><a href="./../cuestionarios/cuestionarios.html">Cuestionarios</a></li>
+                <li class="btn_diccionario">
+                    <a href="#" onclick="convocarDiccionario(document.getElementById('diccionario'))">Diccionario</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <iframe src="./../temario_nav.html" class="temario" id="temario"></iframe>
+    <iframe src="./../diccionario_nav.html" class="diccionario" id="diccionario"></iframe>
+
+    <main>
+        <div class="contenido">
+            <h1>Tipos de datos</h1>
+
+            <p>
+                Existen muchos tipos de datos que define Java, y están clasificados en dos categorías: datos primitivos y los no-primitivos, Los primitivos son los definidos desde propio el lenguaje de programación (números, valores de cierto/falso, decimales, etc.) y los no-primitivos son tipos de datos no definidos por el lenguaje, sino por los programadores (cadenas de textos, vectores, enumeradores, clases, etc.). En este capítulo veremos solo los tipos de datos primitivos, y después cubriremos los datos no-primitivos en posteriores módulos.
+            </p>
+
+            <h3>Tipos de datos primitivos</h3>
+            <p>
+                Esta es una tabla con todos los datos primitivos de Java que iremos viendo uno a uno.
+            </p>
+            
+            <img src="./img/cap2_tabla_de_tipo_de_datos.png" alt="Tabla de atributos de los tipos de datos" style="width: 90%;">
+            <p>
+                Como ves, unos tipos de datos representan valores de más grandes que otros, y por ende, requieren de más espacio en memoria, usar un tipo u otro dependerá del criterio del programador en cuanto a que tan grande es el dato va a utilizar.
+            </p>
+
+            <h4>Números enteros (byte, int, short y long)</h4>
+            <p>Los números en Java pueden ser Enteros (integer) o con decimales (de punto flotante / float), los enteros puedes ser:</p>
+            <ul>
+                <li>byte</li>
+                <li>short</li>
+                <li>int</li>
+                <li>long</li>
+            </ul>
+            <p>
+                Puedes ver en la tabla anterior que tan grande es el numero que pueden guardar, el más usado es el int (viene de “Integer”, entero en inglés) ya que maneja un rango muy amplio de valores y las computadoras modernas aguantan perfectamente este tipo de dato (pero si quieres optimizar tu programa al máximo, usa el tipo de dato acorde al valor que guardara).
+            </p>
+            
+            <h4>Numero con decimales (float y double)</h4>
+            <p>
+                Los números con decimales utilizan los tipos float y double, float viene de la ingle “punto flotante”, almacenan una cantidad grande de valores y hasta 7 dígitos después del punto, para identificar a un número flotante, se necesita poner una f al final del número decimal (por ejemplo: 15.414f, 0.25f, 1.5f, etc). Double es como un float pero con más almacenaje y precisión (hasta 16-17 dígitos después del punto) y no requiere de un sufijo como si lo necesita un float. Sirven mucho en las divisiones y a pesar de ser números, los decimales no pueden almacenarse en variables de tipo de valor entero.
+            </p>
+            <img src="./img/cap2_float_double.png" alt="Ejemplos de datos tipo float y double" style="width: 300px;">
+
+            <h4>Dato de cierto/falso (boolean)</h4>
+            <p>
+                En los programas requeriremos valores que solo representen un estado, cierto o falso, si o no, encendido o apagado, para eso es el tipo boolean. Es tipo de valor más liviano (1 bit) y solo puede almacenar dos valores; <strong><i>true</i></strong> (“cierto” en inglés) o <strong><i>false</i></strong> (“falso” en inglés), no dejará guardar otro valor que no sea uno de esos dos y servirá mucho en futuro módulos donde veremos como tomar decisiones si cierto predicado o enunciado es “cierto” o si es “falso”.
+            </p>
+            <img src="./img/cap2_boolean.png" alt="Ejemplos de datos tipo boolean" style="width: 300px;">
+
+            <h4>Carácter o letra (char)</h4>
+            <p>
+                Un carácter es una letra con la configuración UTF-16, que es una forma de codificación de caracteres, puedes ver el código UTF-16 que corresponde a cada carácter o letra en este link <a href="https://www.fileformat.info/info/charset/UTF-16/list.htm?msclkid=31a8713bbe9f11ec96c3287c282e01aa" target="_blank">Complete Character List for UTF-16</a> , para usar caracteres, tenemos que poner la letra entre comillas simples (‘ ‘). Los char realmente se usan comúnmente a la hora de analizar texto o sacar ciertos caracteres a las cadenas de las cadenas de texto (también llamadas String). 
+            </p>
+            <img src="./img/cap2_chars_String.png" alt="Ejemplos de datos tipo char y String" style="width: 300px;">
+            <p>
+                El tipo de dato String (cadena de caracteres) sirve para guardar texto, no solo un carácter y son muy utilizada en la programación (en vez de comillas simples, se utilizan comillas dobles (“ ”) para denotar las cadenas de texto); pero no son categorizadas como “variables primitivas” en Java, esto por ser un conjunto de variables tipo char (un carácter / letra), pero aprenderemos a usarlas más adelante.
+            </p>
+
+
+            <div class="nav_capitulos" style="display: flex; justify-content: space-around; margin: 2rem">
+                <a href="./cap1.html">&lt; Anterior</a>
+                <a href="./../index.html"> Home</a>
+                <a href="./cap3.html">Siguiente &gt;</a>
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src="./../js/script.js"></script>
+
+</html>

@@ -22,6 +22,6 @@ public class programa2_Variables {
         int numeroEntero;
         
         // des-comenta la siguiente linea para ver como da error
-        // numeroEntero = 1.5; //error 
+        // numeroEntero = f1.5; //error 
     }
 }
